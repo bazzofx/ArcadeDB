@@ -1,0 +1,5 @@
+!#/bin/bash
+
+docker run --rm -p 80:80 -p 80:80
+           -e JAVA_OPTS="-Darcadedb.server.rootPassword=HotSummerNight2020!-Darcadedb.server.defaultDatabases=Imported[root]{import:https://github.com/ArcadeData/arcadedb-datasets/raw/main/orientdb/OpenBeer.gz}"
+           arcadedata/arcadedb:latest
